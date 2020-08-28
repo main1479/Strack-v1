@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    @include px992{
+        font-size: 57%;
+    }
+    @include px768{
+        font-size: 52%;
+    }
+    @include px575{
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.row{
+    width: 90%;
+    max-width: 114rem;
+    margin: 0 auto;
+}

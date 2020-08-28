@@ -1,0 +1,65 @@
+@mixin clearfix{
+    &::after{
+        content:'';
+        display: table;
+        clear: both;
+    }
+}
+@mixin div {
+    &::after {
+        content: '';
+        width: 5rem;
+        height: 0.5rem;
+        background: #41acc5;
+        display: block;
+        margin:2rem auto;
+    }
+}
+
+// ===============================================
+// ===============================================
+// ===============================================
+@mixin px1200 {
+    @media only screen and (max-width:1200px) { @content; }
+}
+@mixin px1024 {
+    @media only screen and (max-width:1024px) { @content; }
+}
+@mixin px992 {
+    @media only screen and (max-width:992px) { @content; }
+}
+@mixin px768 {
+    @media only screen and (max-width:768px) { @content; }
+}
+@mixin px575 {
+    @media only screen and (max-width:575px) { @content; }
+}
+@mixin px480 {
+    @media only screen and (max-width:480px) { @content; }
+}
+@mixin px380 {
+    @media only screen and (max-width:380px) { @content; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

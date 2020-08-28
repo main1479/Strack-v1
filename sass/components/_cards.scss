@@ -1,0 +1,95 @@
+.track-box{
+    overflow: hidden;
+    text-align: center;
+    backface-visibility: hidden;
+
+    &-img{
+        width: 100%;
+        & img{
+            width: 100%;
+        }
+    }
+    &-content{
+        h3{
+            font-size:2.4rem;
+            color:#11CFE7;
+        }
+        padding:0 4rem;
+        font-size:1.5rem
+    }
+}
+// =======================================
+// ========== feature cards =============
+// =======================================
+.feature-box{
+    background: #fff;
+    border-radius:1rem;
+    color:#444;
+    font-size:1.5rem;
+    padding: 4rem 2rem 3rem 2rem;
+    position: relative;
+    margin-bottom: 5rem;
+    // margin-top: 5rem;
+    &-icon{
+        position: absolute;
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        background: #32d2e9;
+        top: -4rem;
+        left: calc(50% - 4.5rem);
+        border: .4rem solid #fff;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        text-align: center;
+        img{
+            height:5rem;
+            margin-top:calc(50% - 2.5rem);
+        }
+    }
+    &-icon1{
+        img{
+            margin-left: -.5rem;
+        }
+    }
+    p{
+        margin-top: 2rem;
+        font-family: $font1;
+    }
+}
+@include px768{
+    .span_1_of_3{
+        width: 80%;
+        margin-left: 10% !important;
+    }
+    .span_1_of_4 {
+        width: 48%;
+
+        &:nth-child(3) {
+            margin-left: 0;
+        }
+    }
+}
+@include px480 {
+
+    .span_1_of_4 {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
+
+@include px480{
+    .span_1_of_3 {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+}
+
+
+
+
+
+
+
